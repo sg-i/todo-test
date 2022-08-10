@@ -1,0 +1,48 @@
+.leftSideButtons{
+    display: flex;
+    padding-bottom: 0;
+    margin:-10px;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+    height:55px;
+    .customButton{
+        font-size: 19px; 
+        padding: 10px;
+        padding-bottom: 3px;
+        border: none;
+        cursor: pointer;
+    }
+    .addButton{
+        width:50%;
+        border-top-left-radius: 30px;
+        border-right: 0.5px solid rgba(0,0,0,0.15);
+        background-color: rgba(0, 0, 0,0.001);
+        &:hover{
+            background-color: rgba(0, 0, 0,0.1);
+         }
+    }
+    .searchButtonMini{
+        width:20%;
+    }
+    .searchButton{
+        width:100%;
+        border-top-right-radius: 30px;
+        background-color: rgba(0, 0, 0,0.001);
+        &:hover{
+            background-color: rgba(0, 0, 0,0.1);
+         }
+    }
+    .rightContainer{
+        display: flex;
+    }
+    .rightContainerMini{
+        width: 50%;
+    }
+    .searchInput{
+        border-top-right-radius: 30px;
+        padding-left: 5px;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        font-size: 20px;
+    }
+}

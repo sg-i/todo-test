@@ -1,0 +1,30 @@
+.EmptyTasks{
+    position: absolute;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 24px;
+    margin: 0 auto;
+    height: 85%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    .customButton{
+        font-size: 19px; 
+        border-radius: 10px;
+        padding: 10px;
+        border: none;
+        height: 45px;
+        width: 50%;
+        margin: 20px auto;
+        margin-top: 20px;        
+    }
+    .buttonSave{
+        padding-top: 7px;
+        background-color: rgb(107, 255, 87);
+        color:rgb(0, 0, 0);
+        &:hover{
+            background-color: rgb(101, 244, 82);
+        } 
+    }
+}

@@ -1,0 +1,42 @@
+.Task{
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 9px;
+    background-color: rgb(251, 251, 251);
+    overflow: hidden;
+    transition: border-left 50ms;
+    &:hover{
+        transition: border-left 50ms;
+    }
+    .title{
+        font-size: 20px;
+    }
+    .description{
+        white-space: nowrap;
+        overflow: hidden;
+        width:100%;
+    }
+}
+.waitTask{
+    border-left: 7px solid rgb(151, 151, 151);
+    &:hover{
+        border-left: 8px solid rgb(151, 151, 151);
+    }
+}
+.duringTask{
+    border-left: 7px solid blue;
+    &:hover{
+        border-left: 8px solid blue;
+    }
+}
+.completeTask{
+    border-left: 7px solid rgb(0, 233, 35);
+    &:hover{
+        border-left: 8px solid rgb(0, 233, 35);
+    }
+}

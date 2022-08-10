@@ -1,0 +1,109 @@
+.editTask{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .processName{
+        font-size: 22px;
+        text-align: center;
+        border-bottom: 1px solid rgba(0,0,0,0.15);
+        height: 55px;
+    }
+    .inputTask{
+        box-sizing: border-box;
+        width: 100%;
+        min-height: 48px;
+        margin-bottom: 10px;
+        border: none;
+        border-bottom: 1px solid rgba(0,0,0,0.15);        
+        font-size: 24px;
+        padding: 10px;
+        outline: none;
+        resize: vertical;
+        height:55px;
+        background-color: rgba(0,0,0,0);
+    }   
+    .changeStatus{
+        display: flex;
+        width: 100%;
+        margin-top: 5px;
+        .buttonStatus{
+            margin: 0 10px;
+            background-color: rgba(0,0,0,0);
+            border-radius: 20px;
+            font-size: 17px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .waitButton{
+            &:hover{
+                background: rgb(236,236,236);
+                background: linear-gradient(0deg, rgb(216, 216, 216) 0%, rgba(255,255,255,1) 60%);
+            }
+            
+        }
+        .waitButtonActive{
+            background: linear-gradient(0deg, rgba(236,236,236,1) 0%, rgba(255,255,255,1) 60%);
+            background: rgb(236,236,236);
+        }
+        .duringButton{
+            &:hover{
+                background: linear-gradient(0deg, rgba(61, 61, 255, 0.436) 0%, rgba(255,255,255,1) 60%);
+            }
+        }
+        .duringButtonActive{
+            background: linear-gradient(0deg, rgba(0,0,255,1) 0%, rgba(255,255,255,1) 60%);
+            background: rgba(61, 61, 255, 0.436);
+        }
+        .completeButton{
+            &:hover{
+                background: linear-gradient(0deg, rgb(12, 255, 45) 0%, rgba(255,255,255,1) 60%);
+            }
+        }
+        .completeButtonActive{
+            background: linear-gradient(0deg, rgb(12, 255, 45) 0%, rgba(255,255,255,1) 60%);
+            background: rgb(12, 255, 45);
+        }
+    }
+    .bottomButtons{
+        display: flex;
+        justify-content: space-between; 
+        padding: 10px; 
+    }
+    .textareaTask{
+        flex: 1;
+        box-sizing: border-box;
+        width: 100%;
+        min-height: 48px;
+        border: none;
+        font-size: 20px;
+        padding: 10px;
+        outline: none;
+        padding-top: 0;
+        margin-top: 15px;
+        resize: none;
+    }
+    .customButton{
+        font-size: 18px; 
+        border-radius: 10px;
+        padding: 10px;
+        border: none;
+        height: 45px;
+        cursor: pointer;
+    }
+    .buttonSave{
+        background-color: rgb(107, 255, 87);
+        color:rgb(0, 0, 0);
+        &:hover{
+        background-color: rgb(101, 244, 82);
+        } 
+    }
+    .buttonDelete{
+        background-color: rgb(227, 24, 24);
+        padding-bottom: 5px;  
+        border-radius: 50px;     
+        &:hover{
+            background-color: rgb(207, 22, 22);
+        } 
+    }
+}
